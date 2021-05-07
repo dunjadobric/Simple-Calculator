@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form class="frames">
+        <div class="frameHeading frame">
+            <h1>Calculator</h1>
+        </div>
+        <div class="frameInputs frame">
+            <input type="number" placeholder="Enter first number" id="firstNum" class="numInput">
+            <input type="number" placeholder="Enter second number" id="secondNum" class="numInput">
+        </div>
+        <div class="frameButtons frame">
+            <input class="input" type="button" value="+" onclick="addFunc();">
+
+            <input class="input" type="button" value="-" onclick="subFunc();">
+
+            <input class="input" type="button" value="*" onclick="multFunc();">
+
+            <input class="input" type="button" value="/" onclick="divideFunc();">
+
+            <input type="reset" value="Clear" class="reset" onclick="resetFunc();">
+        </div>
+        <div class="frameResult frame">
+            <p>Result:</p>
+            <input type="text" id="result" class="numInput">
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
